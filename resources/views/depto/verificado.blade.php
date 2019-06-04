@@ -1,0 +1,1 @@
+ventana para la verificacion y liberacion del jefe externo
