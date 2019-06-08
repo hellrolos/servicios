@@ -5,6 +5,7 @@ Route::get('dashboard', 'DashboardController@index')->name('dashboard');
 Route::post('login', 'Auth\LoginController@login')->name('login');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('password', 'DashboardController@password')->name('password');
+Route::post('passwordnew', 'DashboardController@newpassword')->name('passwordnew');
 Route::get('solicitud', 'DashboardController@solicitud')->name('solicitud');
 Route::get('admin/user', 'AdminController@user')->name('user');
 Route::get('admin/updateuser', 'AdminController@updateuser')->name('update');
