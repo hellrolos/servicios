@@ -23,17 +23,17 @@
                                 {{ csrf_field() }}
                                  <div class="form-group">
                                     <label for="passwordold">Contraseña anterior</label>
-                                    <input class="form-control" type="password" name="passwordold" placeholder="Introduce tu Contraseña Anterior">
+                                    <input class="form-control" type="password" name="passwordold" placeholder="Introduce tu Contraseña Anterior" required>
                                     {!! $errors->first('passwordold', '<span class="help-block">:message</span>') !!}
                                 </div>
                                 <div class="form-group">
-                                    <label for="passwordnew">Contraseña Nueva</label>
-                                    <input class="form-control" type="password" name="passwordnew" placeholder="Introduce tu Contraseña Nueva">
-                                    {!! $errors->first('passwordnew', '<span class="help-block">:message</span>') !!}
+                                    <label for="passwordnew1">Contraseña Nueva</label>
+                                    <input class="form-control" type="password" name="passwordnew1" placeholder="Introduce tu Contraseña Nueva">
+                                    {!! $errors->first('passwordnew1', '<span class="help-block">:message</span>') !!}
                                 </div>
                                  <div class="form-group">
                                     <label for="passwordrep">Repetir Contraseña</label>
-                                    <input class="form-control" type="password" name="passwordrep" placeholder="Introduce tu Contraseña Nueva otra vez">
+                                    <input class="form-control" type="password" name="passwordrep" placeholder="Introduce tu Contraseña Nueva otra vez" required>
                                     {!! $errors->first('passwordrep', '<span class="help-block">:message</span>') !!}
                                 </div>
                                 <button class="btn btn-primary btn-block">Cambiar</button>

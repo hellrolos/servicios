@@ -7,8 +7,8 @@
 <body>
     <div class="container">
         <hr>
-        @if(session()->has('passwords'))
-            <div class="alert alert-info">{{ session('passwords') }}</div>
+        @if(session()->has('alert'))
+            <div class="alert alert-info">{{ session('alert') }}</div>
         @endif
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
