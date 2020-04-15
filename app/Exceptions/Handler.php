@@ -58,15 +58,15 @@ class Handler extends ExceptionHandler
                 'message' => 'Metodo de acceso no permitido'
            ));
         }*/
-        $message = $this->getMessage($exception->getStatusCode());
+       /* $message = $this->getMessage($exception->getStatusCode());
         return response()->view('errors.default', array(
                 'code' => $exception->getStatusCode(),
                 'message' => $message
-           ));
+           ));*/
         return parent::render($request, $exception);
     }
 
-    public function getMessage($code){
+    /*public function getMessage($code){
         switch($code){
             case '400':
                         $message = 'Petición no valida';
@@ -213,5 +213,5 @@ class Handler extends ExceptionHandler
                         $message = 'Error no conocido';
         }
         return $message;
-    }
+    }*/
 }
